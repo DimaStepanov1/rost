@@ -1,0 +1,513 @@
+.blur-back {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    opacity: 0.25;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    font-family: "Jost", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #ffffff;
+    z-index: 3;
+    transition: 0.2s ease-in-out;
+}
+
+.interface .blur-back {
+    top: 10%;
+}
+
+.proto .blur-back {
+    top: 15%;
+}
+
+.webflow .blur-back {
+    top: 15%;
+    width: 900px;
+}
+
+
+.elem {
+    position: relative;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.examples {
+    position: relative;
+    height: fit-content;
+    margin-bottom: 350px;
+}
+
+.webflow,
+.interface,
+.proto {
+    margin-bottom: 350px;
+}
+
+.with-svg {
+    margin-left: 0;
+    margin-top: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.elem-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    margin-left: 0;
+    margin-top: 50px;
+    width: 616px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.details {
+    width: 300px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+.line {
+    width: 625px;
+    margin-top: 20px;
+}
+
+.picture {
+    z-index: 1;
+    position: absolute;
+    top: 18%;
+    right: 20%;
+    margin: 0;
+}
+
+.picture img {
+    height: 600px
+}
+
+.image-one {
+    filter: grayscale(100%);
+    filter: gray;
+    transition: 0.2s ease-in-out;
+}
+
+.image-one:hover,
+.image-two:hover {
+    transform: unset;
+    cursor: pointer;
+    filter: none;
+    filter: grayscale(0%) !important;
+    z-index: 5;
+    transition: 0.2s ease-in-out;
+}
+
+.image-one svg,
+.image-two svg {
+    top: 85%;
+    left: 80%;
+    transition: 0.2s ease-in-out;
+}
+
+.image-one:hover svg,
+.image-two:hover svg {
+    transition: 0.2s ease-in-out;
+}
+
+.image-two {
+    filter: grayscale(100%);
+    filter: gray;
+    z-index: 0;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    transition: 0.2s ease-in-out;
+}
+
+.webflow .image-one,
+.interface .image-one,
+.proto .image-one {
+    top: 0%;
+}
+
+.webflow .image-two,
+.interface .image-two,
+.proto .image-two {
+    top: 11%;
+}
+
+.under-image {
+    top: 80%;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.05;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
+.under-image-two {
+    position: absolute;
+    display: none;
+    top: 80%;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.05;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke: 0.2px #ffffff;
+    transition: 0.2s ease-in-out;
+}
+
+.image-one:hover .under-image-two,
+.image-two:hover .under-image-two {
+    display: flex;
+    left: 11%;
+    top: 76%;
+    transition: 0.2s ease-in-out;
+}
+
+.down {
+    z-index: 2;
+    position: absolute;
+    top: 83%;
+    left: 3%;
+}
+
+.webflow .down,
+.interface .down,
+.proto .down {
+    top: 75%;
+}
+
+.more svg {
+    width: 80px;
+    height: 80px;
+    stroke: #fff;
+    flood-color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.more {
+    top: 77%;
+}
+
+.down:hover .more svg {
+    stroke: #ff8800;
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1490px) {
+    .picture img {
+        height: 500px;
+    }
+
+    .blur-back {
+        font-size: 80px;
+    }
+
+    .with-svg {
+        font-size: 22px;
+    }
+
+    .about {
+        width: 500px;
+    }
+
+    .list {
+        width: 500px;
+        margin-left: 0;
+    }
+
+    .line {
+        width: 500px;
+    }
+
+    .links {
+        top: 80%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .elem {
+        margin-left: 3%;
+    }
+
+    .blur-back {
+        left: 3%;
+        font-size: 60px;
+        top: 40%;
+    }
+
+    .interface .blur-back {
+        top: 20%;
+    }
+
+    .proto .blur-back {
+        top: 25%;
+    }
+
+    .webflow .blur-back {
+        top: 25%;
+        width: 600px;
+    }
+
+    .picture img {
+        height: unset;
+    }
+
+    .under-image,
+    .under-image-two {
+        font-size: 16px;
+    }
+
+    .picture {
+        top: 25%;
+    }
+
+    .image-two {
+        top: 33%;
+    }
+
+    .examples {
+        margin-bottom: 300px;
+    }
+
+    .interface,
+    .proto {
+        margin-bottom: 300px;
+    }
+
+    .webflow {
+        margin-bottom: 100px;
+    }
+
+    .image-one {
+        filter: grayscale(0%);
+        filter: gray;
+        transition: 0.2s ease-in-out;
+    }
+
+    .image-one:hover,
+    .image-two:hover {
+        transform: unset;
+        cursor: pointer;
+        filter: none;
+        filter: grayscale(0%) !important;
+        z-index: 5;
+        transition: 0.2s ease-in-out;
+        pointer-events: none;
+    }
+
+
+    .image-two {
+        filter: grayscale(0%);
+        filter: gray;
+        z-index: 0;
+        position: absolute;
+        top: 25%;
+        right: 3%;
+        transition: 0.2s ease-in-out;
+    }
+
+    .image-two {
+        top: 33%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .keis-title {
+        margin-left: 30%;
+    }
+
+    .blur-back {
+        font-size: 50px;
+    }
+
+
+    .about {
+        width: 400px;
+    }
+
+    .line {
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    .list {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .keis-title {
+        margin-left: 27%;
+    }
+
+    .image-one,
+    .image-two {
+        position: unset;
+    }
+
+    .service-images {
+        display: flex;
+    }
+
+    .elem {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about,
+    .list,
+    .line {
+        margin-right: 0;
+        width: 600px;
+        text-align: center;
+    }
+
+    .with-svg {
+        margin-right: 0;
+    }
+
+    .examples {
+        margin-bottom: 250px;
+    }
+
+    .interface,
+    .proto {
+        margin-bottom: 250px;
+    }
+
+    .blur-back {
+        display: none;
+    }
+
+    .burger-menu_button {
+        right: 0;
+    }
+}
+
+@media screen and (max-width:645px) {
+    .keis-title {
+        margin-left: 20%;
+    }
+
+    .about,
+    .list,
+    .line {
+        margin-right: 0;
+        width: 450px;
+        text-align: center;
+    }
+
+    .service-images {
+        flex-direction: column;
+    }
+
+    .examples {
+        margin-bottom: 50px;
+    }
+
+    .interface,
+    .proto {
+        margin-bottom: 50px;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .about,
+    .list,
+    .line {
+        margin-right: 0;
+        width: 315px;
+        text-align: center;
+    }
+
+    .keis-title {
+        margin-left: 15%;
+        font-size: 60px;
+        margin-top: 100px;
+    }
+
+    .elem-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .keis-title {
+        margin-left: 18%;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .keis-title {
+        margin-left: 15%;
+
+    }
+
+    .elem-title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .keis-title {
+        margin-left: 11%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .keis-title {
+        margin-left: 8%;
+    }
+}

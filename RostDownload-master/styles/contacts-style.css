@@ -1,0 +1,210 @@
+.contacts-big{
+    position: relative;
+    display: flex;
+    height: 900px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+.title{
+    margin-left: 10%;
+    margin-top: 10%;
+    font-family: "Jost", sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 21px;
+    color: white;
+}
+.down{
+    height: unset !important;
+}
+.down-circle{
+    margin-top: 250px;
+}
+.wasd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.title::after{
+    content: "";
+}
+.contacts {
+    position: relative;
+    z-index: 1;
+    margin-left: 0;
+    display: flex;
+    justify-self: flex-start;
+    align-self: start;
+    max-width: 1100px;
+    width: 100%;
+    height: 650px;
+    background-color: #141414;
+    -webkit-box-shadow: 0px 0px 26px black;
+    box-shadow: 0px 0px 26px black;
+}
+
+.contact-title{
+    top: 5%;
+}
+.contact-orange{
+    top: 18%;
+}
+
+.phone, .email{
+    top: 35%;
+}
+.email{
+    left: 45%;
+}
+.location{
+    top: 50%;
+}
+.social{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.social .number{
+    margin-left: 0;
+}
+
+.number a{
+    margin-right: 10px;
+    transition: 0.2s ease-in-out;
+}
+.number a{
+    color: #646c6f;
+    text-decoration: none;
+}
+.number a:hover{
+    cursor: pointer;
+}
+
+.number a:first-child:hover{
+    color: #1878f3;
+    transition: 0.2s ease-in-out;
+}
+
+.number a:nth-child(2):hover{
+    color: skyblue;
+    transition: 0.2s ease-in-out;
+}
+
+.number a:last-child:hover{
+    color: #a000a0;
+    transition: 0.2s ease-in-out;
+}
+.map{
+    position: absolute;
+    height: 300px;
+    z-index: 0;
+    right: 0;
+    top: 15%;
+    box-shadow: 0 5px 26px #ff8800;
+}
+
+.hidden{
+    display: none;
+}
+
+.inside-contact2 .contact-title,
+.inside-contact3 .contact-title,
+.inside-contact4 .contact-title,
+.inside-contact5 .contact-title{
+    top: 13%;
+}
+
+.yourname{
+    width: 640px;
+    height: 132px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    font-family: "Jost", sans-serif;
+    font-size: 100px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #646c6f;
+}
+
+.inside-contact2 .arrow-inside, 
+.inside-contact3 .arrow-inside,
+.inside-contact4 .arrow-inside,
+.inside-contact5 .arrow-inside
+{
+    position: absolute;
+    top: 25%;
+    transform: rotate(135deg);
+    left: 5%;
+}
+.inside-contact2 .down-circle,
+.inside-contact3 .down-circle,
+.inside-contact4 .down-circle,
+.inside-contact5 .down-circle{
+    stroke: #ff8800 !important;
+    stroke-width: 5px;
+    border-radius: 50%;
+}
+.down-circle{
+    margin-top: 0;
+}
+
+.down{
+    position: absolute;
+    height: fit-content;
+    top: 55% !important;
+}
+
+#goback:hover, 
+#goback2:hover,
+#goback3:hover,
+#goback4:hover{
+    cursor: pointer;
+}
+
+.inside-contact5 .yourname{
+    font-size: 88px;
+    width: 750px;
+}
+
+.wasd svg {
+    width: 100px;
+    height: 100px;
+    stroke: #fff;
+    flood-color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.down:hover .wasd svg {
+    stroke: #ff8800;
+    transition: 0.2s ease-in-out;
+}
